@@ -16,6 +16,9 @@ The test cases are implemented in Kotlin using Espresso framework for Android. P
    `./gradlew connectedAndroidTest --info `
 3. Test report will be available at   
    `app/build/reports/androidTests/connected/index.html`
-   
 
+## Execute using Github Actions
+- Test cases can also be executed using Github Actions with [Android Emulator Runner](https://github.com/ReactiveCircus/android-emulator-runner).
+- The configuration file is present at `.github/workflows/android.yml`.
+- Test executions can be found in Github Actions.
 
