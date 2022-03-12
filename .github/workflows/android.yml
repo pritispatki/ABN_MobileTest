@@ -1,0 +1,19 @@
+name: Android CI
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: macOS-latest
+
+    steps:
+    - name: checkout
+      uses: actions/checkout@v2
+
+    - name: Run Tests
+      uses: reactiveCircus/android-emulator-runner@v2.22.0
+      with:
+        api-level: 29
+        script: ./gradlew connectedAndroidTest --info
